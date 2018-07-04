@@ -70,6 +70,7 @@ img {
 }
 body i {
   font-family:'FontAwesome'!important;
+  font-style: normal!important;
 }
 
 .arrow {
