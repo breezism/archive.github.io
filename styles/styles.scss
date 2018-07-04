@@ -1,0 +1,37 @@
+@import 'setup';
+
+//GENERAL     #3f4add    
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	margin:0;
+	padding:0;
+}
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+header {
+	background-color: rgb(246,204,186)  ;
+	height: 100vh;
+	nav {
+		display: block;
+		ul {
+		padding: 0;
+		width: 100%;
+			li {
+				list-style: none;
+				display: inline-block;
+		}
+	}
+	}
+	
+}
+
+
+
+//FOOTER SECTION
+footer {
+	height: 150px;
+	color:#3f4add;
+}
