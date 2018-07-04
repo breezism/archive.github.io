@@ -399,6 +399,7 @@ footer p {
   }
   i.fa {
     color: #5E5CA8;
+    font-weight: 900;
   }
   .nav li label {
     visibility: visible;
