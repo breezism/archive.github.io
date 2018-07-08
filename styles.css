@@ -63,6 +63,10 @@ img {
   width: 100%;
   max-width: 100%;
 }
+.carousel-cell {
+    height: 400px;
+    width: 100%;}
+
 .wrapper {
   width: 70%;
   max-width: 1180px;
@@ -70,9 +74,7 @@ img {
 }
 body i {
   font-family:'FontAwesome'!important;
-  font-style: normal!important;
 }
-
 .arrow {
   position: absolute;
   right: 5%;
@@ -94,7 +96,7 @@ body i {
   transition: 0.3s all ease;
 }
 /*HEADER*/
-header, section {
+header, section, .nav-portfolio {
   position: relative;
 } 
 .header {
@@ -115,7 +117,19 @@ header .wrapper {
 .title span {
   color: #ed8374;
 }
-.illustration h3 {
+.portfolio-section {
+  margin: 50px 0;
+}
+.web-development {
+  margin-top: 100px;
+}
+.carousel-cell {
+  height: 450px!important;
+}
+/*.main-carousel {
+  margin-bottom: 50px;
+}*/
+ h3 {
   padding-bottom: 50px;
 }
  .me {
@@ -335,13 +349,13 @@ color: #CEBFE6;
   max-height: 800%;
 }
 .column img {
-  margin-top: 8px;
   vertical-align: middle;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 .nav li label {
   visibility: hidden;
 }
+
 .illustration {
   padding-top: 150px;
 } 
@@ -401,7 +415,6 @@ footer p {
   }
   i.fa {
     color: #5E5CA8;
-    font-weight: 900;
   }
   .nav li label {
     visibility: visible;
@@ -479,7 +492,7 @@ footer p {
   }
   .column {
     width:100%;
-    padding: 10%;
+    /*padding: 10%;*/
   }
   .skills .wrapper {
     width:90%;
@@ -502,7 +515,4 @@ footer p {
     padding:0;
     height: 1200px;
   }  
-}
-i {
-  font-style: normal!important;
 }

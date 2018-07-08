@@ -12,12 +12,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 	<link rel="stylesheet" href="styles/magnific-popup.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Flickity.js Styles-->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body id="home" class="portfolio-body">
 	<header>
-		<nav class="menue">
+		<nav class="menue clearfix">
 			<div class="title">
-				<h1>Nassim Hoseini</h1><p>Front-End Developer <span>&</span> Graphic Designer</p>
+				<h1>Nassim Hoseini</h1><p>Graphic Designer<span> & </span>Front-End Developer</p>
 			</div>
 			<input type="checkbox" id="toggle" name="toggle">
 			<ul class="nav">
@@ -31,24 +33,60 @@
 		</nav>
 	</header>
 	<main>
-		<section class="illustration" id="illustration">
+		
+		<section class="illustration " id="illustration">
+			
 			<h3>Illustrations</h3>
 			<div class="row"> 
   				<div class="column parent-container">
-   					<a href="images/illustration-1.jpg" class="popup-link"><img src="images/illustration-1.jpg" ></a>
-    				<a href="images/illustration-4.jpg" class="popup-link"><img src="images/illustration-4.jpg"></a>
+  					<a href="images/illustration-1.jpg" class="popup-link"><img src="images/illustration-1-cover.jpg" ></a>
+    				<a href="images/illustration-4.jpg" class="popup-link"><img src="images/illustration-4-cover.jpg"></a>
+    				<a href="images/illustration-6.jpg" class="popup-link"><img src="images/illustration-6-cover.png"></a>
+
 				</div>
   				<div class="column parent-container">
-    				<a href="images/illustration-6.jpg" class="popup-link"><img src="images/illustration-6.jpg" ></a>
-    				<a href="images/illustration-3.jpg" class="popup-link"><img src="images/illustration-3.jpg" ></a>
-  					<a href="images/illustration-10.gif" class="popup-link"> <img src="images/illustration-10.gif" ></a>
+    				<a href="images/illustration-7.png" class="popup-link"><img src="images/illustration-7-cover.png" ></a>
+    				<a href="images/illustration14.jpg" class="popup-link"> <img src="images/illustration14-cover.png" ></a>
+    				<a href="images/illustration5.jpg" class="popup-link"> <img src="images/illustration5-cover.jpg" ></a>
+    				      				    				
+
+
    				</div>  
   				<div class="column parent-container">
-    				<a href="images/illustration-2.jpg" class="popup-link"><img src="images/illustration-2.jpg" ></a>
-      				<a href="images/illustration-7.jpg" class="popup-link"><img src="images/illustration-7.jpg" ></a>
+    				<a href="images/illustration-2.jpg" class="popup-link"><img src="images/illustration-2-cover.jpg" ></a>
+    				<a href="images/illustration-10.gif" class="popup-link"> <img src="images/illustration-10-cover.gif" ></a>
+    				<a href="images/illustration-3.jpg" class="popup-link"><img src="images/illustration-3-cover.jpg" ></a>
+
    				</div>
 			</div>
 		</section>
+
+		<section id="graphic-design" class="portfolio-section">
+			
+			<h3>Graphic Design</h3>
+<div class="main-carousel wrapper">
+  					<div class="carousel-cell"><img src="images/graphicDesign-3-cover.png"></div>
+  					<div class="carousel-cell"><img src="images/graphicDesign-4-cover.png"></div>
+  					<div class="carousel-cell"><img src="images/graphicDesign-2-cover.png"></div>
+  					<div class="carousel-cell"><img src="images/graphicDesign-1-cover.png"></div>
+				</div>
+			
+			
+		</section>
+
+		<section class="web-development portfolio-section" id="illustration">
+			
+			<h3>Web Development</h3>
+			<div class="main-carousel wrapper">
+  					<div class="carousel-cell"><img src="images/webdevelopment1-cover.png"></div>
+  					<div class="carousel-cell"><img src="images/webdevelopment2-cover.png"></div>
+  				
+  				
+  					
+				</div>
+			
+		</section>
+		</div>
 		<footer>
 			<div >
 				<p>2018 © DESIGN AND CODE BY NASSIM HOSEINI.</p>
@@ -57,10 +95,11 @@
 					<a href="https://www.instagram.com/nassimhoseini/"><i class="fab fa-instagram"></i></a>
 					<a href="https://www.behance.net/nassimhoseini"><i class="fab fa-behance"></i></a>	
 				</div>
-			</div>
+			
 		</footer>
 	</main>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <!-- Magnific Popup core JS file -->
 	<script src="js/jquery.magnific-popup.js"></script>
 	<script>
@@ -68,6 +107,11 @@
  		type: 'image'
   		// other options
 		});
+		$('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true
+});
 	</script>
 </body>
 </html>
