@@ -109,9 +109,11 @@ header, section, .nav-portfolio {
   transform: translate(-50%, -50%);
 }
 header .wrapper {
-  position: relative;
+/*  position: relative;*/
+  margin-top: 90px;
 }
 .header-image {
+  position:relative;
   height: 100vh;
 }
 .title span {
@@ -134,10 +136,10 @@ header .wrapper {
 }
  .me {
   position: absolute;
-  top:150px;
+  top:50%;
   left: 50%;
-  width:70%;
-  transform: translate(-50%);
+  width:50%;
+  transform: translate(-50%, -50%);
 }
 .menue {
   background: #fff;
