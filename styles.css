@@ -78,7 +78,7 @@ body i {
 .arrow {
   position: absolute;
   right: 5%;
-  bottom: 10px;
+  bottom: 100px;
 }
 .arrow .far {
   color: #ed8374;
@@ -114,7 +114,7 @@ header .wrapper {
 }
 .header-image {
   position:relative;
-  height: 90vh;
+  height: 100vh;
 }
 .title span {
   color: #ed8374;
@@ -138,7 +138,7 @@ header .wrapper {
   position: absolute;
   top:50%;
   left: 50%;
-  width:50%;
+  width:20%;
   transform: translate(-50%, -50%);
 }
 .menue {
@@ -196,8 +196,8 @@ label[for="toggle"] {
 }
 /*ABOUT*/
 .about {
-  padding: 100px 0;
-  height: 800px;
+  padding: 200px 0;
+/*  height: 800px;*/
   background: #fff;
 }
 .about-image {
@@ -246,8 +246,8 @@ label[for="toggle"] {
 /*SKILLS*/
 .skills {
   background: #5E5CA8;
-  height: 600px;
-  padding: 100px 0;
+/*  height: 600px;*/
+  padding: 200px 0;
   color: #fff;
 }
 .skills h3 {
@@ -277,7 +277,7 @@ label[for="toggle"] {
 /* CONTACT */
 .card {
   position: relative;
-  perspective: 800px;
+ /* perspective: 800px;*/
 }
 .card div {
   width: 400px;
@@ -286,8 +286,8 @@ label[for="toggle"] {
   top:0;
   left:0;
   color: #fff;
-  backface-visibility: hidden;
-  transition: 0.5s all;
+ /* backface-visibility: hidden;
+  transition: 0.5s all;*/
   border-radius: 40px;
   display: flex;
   flex-direction: column;
@@ -296,10 +296,10 @@ label[for="toggle"] {
   background: #f8735c;
 }
 .card:hover .front {
-  transform: rotateY(-180deg);
+ /* transform: rotateY(-180deg);*/
 }
 .card:hover .back {
-  transform: rotateY(0deg);
+ /* transform: rotateY(0deg);*/
 }
 .card i {
   font-size: 3rem;
@@ -317,25 +317,44 @@ color: #CEBFE6;
   font-size: 3rem;
 }
 .back {
-  transform: rotateY(180deg);
+ /* transform: rotateY(180deg);*/
   letter-spacing: 0.2rem;
   font-size: 2rem;
 }
-.social-media {
-  margin-top: 20px;
-}
+
 .social-media a {
+  margin-top: 20px;
   padding:10px;
 }
 .contact {
-  height: 500px;
-  padding-top: 100px;
+/*  height: 500px;*/
+  position:relative;
+  padding: 200px 0;
   background: #fff;
+}
+.contact-info {
+  text-align: center;
+  position:absolute;
+  top: 65%;
+  left:50%;
+  transform: translate(-50%, -65%);
+}
+.contact-info p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #5D5CAE;
+  font-size: 2rem;
 }
 .wrapper-contact {
   width: 30%;
   margin: 0 auto;
   max-width: 1028px;
+}
+.wrapper-contact .wrapper {
+  position:relative;
+}
+.flickity-enabled.is-draggable .flickity-viewport {
+  height:600px;
 }
 /*PORTFOLIO*/
 .row {
@@ -396,6 +415,10 @@ footer p {
 .footer-icons {
   display: inline-block;
   float: right;
+}
+.contact-info i {
+  font-size: 3rem;
+  color: #ed8374;
 }
 @media (max-width: 1200px) {
   h1 {
@@ -465,12 +488,20 @@ footer p {
     align-items: center;
     height: 1300px;
   }
+  .header-image {
+    display:none;
+  }
   .card div {
     width:100%;
   }
+
   .wrapper-contact {
     width: 90%;
   }
+  .wrapper-contact .wrapper {
+    width: 100%;
+  }
+
   footer p {
     text-align: center;
   }
@@ -482,6 +513,8 @@ footer p {
 }
 }
 @media (max-width: 555px){
+  .contact-info p {
+    font-size: 1.2rem; }
   .nav {
     width: 100%;
     right: -100%;
@@ -517,4 +550,11 @@ footer p {
     padding:0;
     height: 1200px;
   }  
+
+   .contact, .skills, .about {
+    padding: 100px 0;
+  }
+  .about-section {
+    height: 600px;
+
 }
