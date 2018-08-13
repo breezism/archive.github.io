@@ -125,12 +125,18 @@ header .wrapper {
 .web-development {
   margin-top: 100px;
 }
+.wrapper-development {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
 .carousel-cell {
   height: 450px!important;
 }
-/*.main-carousel {
-  margin-bottom: 50px;
-}*/
+.main-carousel {
+  /*height: 450px;*/
+  width:60%;
+}
  h3 {
   padding-bottom: 50px;
 }
@@ -512,6 +518,12 @@ footer p {
   right:5%;
 }
 }
+@media (max-width: 994px){
+  .main-carousel {
+  
+  width:100%;
+}
+}
 @media (max-width: 555px){
   .contact-info p {
     font-size: 1.2rem; }
@@ -537,6 +549,10 @@ footer p {
     flex-direction: column;
     padding: 0 4px;
   }
+  .main-carousel {
+  height: 300px;
+
+}
   #toggle[type="checkbox"]:checked + ul.nav{
     right: 0;
   }
